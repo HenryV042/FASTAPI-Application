@@ -11,6 +11,7 @@ class Animal (BaseModel):
     data_nasc: Optional[str] = None
     peso: Optional[float] = None
     status_saude: Optional[str] = None
+    fase_vida: Optional[str] = None
 
 class AnimalUpdate (BaseModel):
     nome: str
@@ -18,3 +19,4 @@ class AnimalUpdate (BaseModel):
     data_nasc: Optional[str] = None
     peso: Optional[float] = None
     status_saude: Optional[str] = None
+    fase_vida: Optional[str] = None
