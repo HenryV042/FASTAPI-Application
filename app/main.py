@@ -7,8 +7,9 @@ app = FastAPI(
     version="1.0.0",
 )
 
+# Adiciona as rotas de animal
 app.include_router(animal_router)
 
 @app.get("/", tags=["Status"])
 def raiz():
-    return {"mensagem": "API da Entrega 4 - Gestão Agropecuária no ar."}
+    return {"msg": "API da Entrega 4 - Gestão Agropecuária no ar."}
