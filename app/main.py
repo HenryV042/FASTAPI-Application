@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from app.routers.animal_router import router as animal_router
+from app.routers.v_resumo_router import router as resumo_router
 
 app = FastAPI(
     title="API - Gestão Agropecuária",
@@ -9,6 +10,8 @@ app = FastAPI(
 
 # Adiciona as rotas de animal
 app.include_router(animal_router)
+# Adiciona as rotas de v_resumo_fazendas
+app.include_router(resumo_router)
 
 @app.get("/", tags=["Status"])
 def raiz():

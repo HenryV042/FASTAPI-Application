@@ -8,7 +8,7 @@ class Animal (BaseModel):
     id_raca: int
     nome: str
     sexo: str
-    data_nasc: Optional[str] = None
+    data_nasc: Optional[date] = None
     peso: Optional[float] = None
     status_saude: Optional[str] = None
     fase_vida: Optional[str] = None
@@ -16,7 +16,7 @@ class Animal (BaseModel):
 class AnimalUpdate (BaseModel):
     nome: Optional[str] = None
     sexo: Optional[str] = None
-    data_nasc: Optional[str] = None
+    data_nasc: Optional[date] = None
     peso: Optional[float] = None
     status_saude: Optional[str] = None
     fase_vida: Optional[str] = None
