@@ -125,9 +125,6 @@ Para provar que o controle de acesso funciona também pela aplicação:
      negada vindo do PostgreSQL (isso é o esperado e vale tirar print para
      o relatório).
 
-## Print para o relatório
-Tire print de:
-- `/docs` mostrando todas as rotas listadas
-- Cada operação do CRUD de animais funcionando (GET, POST, PATCH, DELETE)
-- As consultas de `/producao` e `/resumo` funcionando
-- O erro de permissão ao tentar POST/PATCH/DELETE usando o `fazenda_leitura`
+## Docs
+
+![Docs](image.png)
